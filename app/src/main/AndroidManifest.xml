@@ -14,7 +14,10 @@
         android:theme="@style/Theme.SuitOsomAnd12Binar"
         tools:targetApi="31">
         <activity
-            android:name=".activity.InputPlayer1Activity"
+            android:name=".presenter.activity.UserChose"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashscreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SplashscreenActivity"/>
-        <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.ScreenSlidePagerActivity"/>
+        <activity android:name=".activity.InputPlayer1Activity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ScreenSlidePagerActivity" />
     </application>
 
 </manifest>

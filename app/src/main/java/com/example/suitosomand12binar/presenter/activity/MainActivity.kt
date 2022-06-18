@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         checkPlayer1()
+        setButton()
 
     }
 
@@ -51,10 +52,9 @@ class MainActivity : AppCompatActivity() {
 
     fun setButton(){
         val btnLp2 = findViewById<Button>(R.id.btn_lp2)
-        var intentToInput: Intent
 
         btnLp2.setOnClickListener(){
-            intentToInput = Intent(this, InputPlayer1Activity::class.java)
+            val intentToInput = Intent(this, InputPlayer1Activity::class.java)
             startActivity(intentToInput)
             finish()
         }
