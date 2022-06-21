@@ -6,13 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.example.suitosomand12binar.R
 import com.example.suitosomand12binar.activity.MainActivity
 import com.example.suitosomand12binar.activity.ScreenSlidePagerActivity
+import com.example.suitosomand12binar.databinding.ActivityInputp1Binding
 import com.example.suitosomand12binar.presenter.activity.UserChose
 
+//not used
+
 class InputnameFragment : Fragment() {
+
+    private var _binding: ActivityInputp1Binding? = null
+    private val binding get() = _binding!!
 
     val acMain = MainActivity()
     val vPager = ScreenSlidePagerActivity()
@@ -21,18 +28,27 @@ class InputnameFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View = inflater.inflate(R.layout.activity_inputp1, container, false)
+    ): View {
+        _binding = ActivityInputp1Binding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btnInputName = view.findViewById<Button>(R.id.btn_submit)
 
-        btnInputName.setOnClickListener {
-            val intentToInput = Intent(context, UserChose::class.java)
+        binding.btnSubmit.setOnClickListener {
+            println("hello button where are you")
+            val intentToInput = Intent(view.context, UserChose::class.java)
             startActivity(intentToInput)
             activity?.finish()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }
