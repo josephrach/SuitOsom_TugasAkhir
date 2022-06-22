@@ -6,14 +6,14 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suitosomand12binar.R
-import com.example.suitosomand12binar.sources.database.PermainanDatabase
 import com.example.suitosomand12binar.databinding.ActivityMainBinding
 import com.example.suitosomand12binar.dataclass.Pemain1
+import com.example.suitosomand12binar.sources.database.PermainanDatabase
 import com.example.suitosomand12binar.sources.interfaces.Pemain1Dao
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class InputPlayer1Activity: AppCompatActivity() {
+class InputPlayer1Activity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private lateinit var binding: ActivityMainBinding
 
@@ -34,12 +34,12 @@ class InputPlayer1Activity: AppCompatActivity() {
         inputNama()
     }
 
-    fun inputNama(){
+    fun inputNama() {
         val etNama = findViewById<EditText>(R.id.et_nama)
         val btnSubmit = findViewById<Button>(R.id.btn_submit)
-        val intentToMenu : Intent
+        val intentToMenu: Intent
 
-        btnSubmit?.setOnClickListener(){
+        btnSubmit?.setOnClickListener() {
             namaPemain = etNama.text.toString()
 
             val newPemain1 = Pemain1(
@@ -50,7 +50,7 @@ class InputPlayer1Activity: AppCompatActivity() {
             saveToDatabase(pemain = newPemain1)
         }
 
-        runOnUiThread(){
+        runOnUiThread() {
             etNama.setText("")
         }
 
@@ -58,14 +58,14 @@ class InputPlayer1Activity: AppCompatActivity() {
 //        startActivity(intentToMenu)
     }
 
-    private fun saveToDatabase(pemain: Pemain1){
+    private fun saveToDatabase(pemain: Pemain1) {
         GlobalScope.launch {
             val addUser = pemain1Dao?.insertPemain1(pemain)
             println("user has added -->> $addUser")
         }
     }
 
-    fun fetchData(){
+    fun fetchData() {
         GlobalScope.launch {
             val pemain1Data = pemain1Dao?.getAllPemain1().orEmpty()
             println("ini database ${pemain1Data}")
