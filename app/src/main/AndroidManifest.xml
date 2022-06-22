@@ -17,7 +17,7 @@
         <activity android:name=".activity.InputPlayer1Activity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ScreenSlidePagerActivity" />
-        <activity android:name=".presenter.activity.UserChose" />
+        <activity android:name=".presenter.activity.UserChosePlayerTwo" />
 
         <activity
             android:name=".activity.SplashscreenActivity"

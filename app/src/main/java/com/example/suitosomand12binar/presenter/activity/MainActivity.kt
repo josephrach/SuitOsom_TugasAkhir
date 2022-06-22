@@ -7,6 +7,8 @@ import com.example.suitosomand12binar.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    //this activity is for paret pragment
+
     private var _binding: ActivityMainBinding? = null
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewPagerAdapter: LandingPageVpAdapter

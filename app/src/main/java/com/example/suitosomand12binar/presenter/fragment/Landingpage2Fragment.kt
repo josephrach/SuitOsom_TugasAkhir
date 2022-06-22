@@ -25,7 +25,7 @@ class Landingpage2Fragment: Fragment() {
         val btnLp2 = view.findViewById<Button>(R.id.btn_lp2)
 
         btnLp2.setOnClickListener() {
-            val intentToInput = Intent(context, InputPlayer1Activity::class.java)
+            val intentToInput = Intent(view.context, InputPlayer1Activity::class.java)
             startActivity(intentToInput)
             activity?.finish()
         }

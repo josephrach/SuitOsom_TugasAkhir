@@ -5,14 +5,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
 import androidx.fragment.app.Fragment
-import com.example.suitosomand12binar.R
 import com.example.suitosomand12binar.activity.MainActivity
 import com.example.suitosomand12binar.activity.ScreenSlidePagerActivity
 import com.example.suitosomand12binar.databinding.ActivityInputp1Binding
-import com.example.suitosomand12binar.presenter.activity.UserChose
+import com.example.suitosomand12binar.presenter.activity.UserChosePlayerTwo
 
 //not used
 
@@ -40,7 +37,7 @@ class InputnameFragment : Fragment() {
 
         binding.btnSubmit.setOnClickListener {
             println("hello button where are you")
-            val intentToInput = Intent(view.context, UserChose::class.java)
+            val intentToInput = Intent(view.context, UserChosePlayerTwo::class.java)
             startActivity(intentToInput)
             activity?.finish()
         }
