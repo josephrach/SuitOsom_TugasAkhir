@@ -18,6 +18,9 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ScreenSlidePagerActivity" />
         <activity android:name=".presenter.activity.UserChosePlayerTwo" />
+        <activity android:name=".presenter.activity.GameMenuActivity" />
+        <activity android:name="com.example.binar_challenge_chp5.ui.main.VersusCPUActivity" />
+        <activity android:name="com.example.binar_challenge_chp5.ui.main.VersusPemainActivity" />
 
         <activity
             android:name=".activity.SplashscreenActivity"
