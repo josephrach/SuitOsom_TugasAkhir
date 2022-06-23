@@ -1,13 +1,10 @@
 package com.example.suitosomand12binar.presenter.activity
 
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.binar_challenge_chp5.ui.main.VersusCPUActivity
-import com.example.binar_challenge_chp5.ui.main.VersusPemainActivity
 import com.example.suitosomand12binar.R
 import com.example.suitosomand12binar.activity.InputPlayer1Activity
 import com.example.suitosomand12binar.databinding.ActivityGameMenuBinding
@@ -43,7 +40,7 @@ class GameMenuActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val intent = intent.getStringExtra(InputPlayer1Activity.NAME_PLAYER)
+        val intent = intent.getStringExtra(InputPlayer1Activity.PLAYER_ONE)
 
         Snackbar.make(
             findViewById(R.id.main_layout),

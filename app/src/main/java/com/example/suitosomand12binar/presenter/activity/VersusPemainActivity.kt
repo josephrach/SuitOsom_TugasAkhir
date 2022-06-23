@@ -1,16 +1,18 @@
 package com.example.binar_challenge_chp5.ui.main
 
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import com.example.binar_challenge_chp5.data.Callback
 import com.example.binar_challenge_chp5.data.CallbackDialog
 import com.example.suitosomand12binar.R
+import com.example.suitosomand12binar.activity.InputPlayer1Activity
 import com.example.suitosomand12binar.databinding.ActivityVersusPemainBinding
+import com.example.suitosomand12binar.presenter.activity.InsertUserChooseActivity
 import com.example.suitosomand12binar.presenter.fragment.DialogHasilFragment
 import com.example.suitosomand12binar.sources.data.Controller
 
@@ -23,8 +25,10 @@ class VersusPemainActivity : AppCompatActivity(), Callback, CallbackDialog {
         binding = ActivityVersusPemainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val name = intent.getStringExtra("nama1")
-        binding.txtPlayer1.text = name
+        val namePlayerOne = intent.getStringExtra(InputPlayer1Activity.PLAYER_ONE)
+        val namePlayerTwo = intent.getStringExtra(InsertUserChooseActivity.PLAYER_TWO)
+        binding.txtPlayer1.text = namePlayerOne
+        binding.txtPlayer2.text = namePlayerTwo
 
         val btnPlayer1 = arrayOf(
             binding.imgBatu1,
@@ -67,7 +71,7 @@ class VersusPemainActivity : AppCompatActivity(), Callback, CallbackDialog {
                 disableClick2(false)
                 if (resultPlayer1 != "") {
                     controller.checkResult(
-                        resultPlayer1, resultPlayer2, name, "Pemain 2"
+                        resultPlayer1, resultPlayer2, namePlayerOne, "Pemain 2"
                     )
                 }
                 Toast.makeText(

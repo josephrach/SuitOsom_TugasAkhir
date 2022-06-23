@@ -24,7 +24,7 @@ class VersusCPUActivity : AppCompatActivity(), Callback, CallbackDialog {
         binding = ActivityVersusCpuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val name = intent.getStringExtra(InputPlayer1Activity.NAME_PLAYER)
+        val name = intent.getStringExtra(InputPlayer1Activity.PLAYER_ONE)
         binding.txtPlayer1.text = name
 
         val btnPlayer1 = arrayOf(

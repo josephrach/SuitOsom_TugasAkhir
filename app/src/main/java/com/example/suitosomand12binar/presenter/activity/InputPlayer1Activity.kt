@@ -29,7 +29,7 @@ class InputPlayer1Activity : AppCompatActivity() {
     }
 
     companion object {
-        const val NAME_PLAYER = "playertwo"
+        const val PLAYER_ONE = "player_one"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,7 +57,7 @@ class InputPlayer1Activity : AppCompatActivity() {
             saveToDatabase(pemain = newPemain1)
 
             val intentToMenu = Intent(this, GameMenuActivity::class.java)
-            intentToMenu.putExtra(NAME_PLAYER, newPemain1.nama)
+            intentToMenu.putExtra(PLAYER_ONE, newPemain1.nama)
             Toast.makeText(this, "Halo Selamat Datang ${newPemain1.nama}", Toast.LENGTH_SHORT)
                 .show()
             startActivity(intentToMenu)

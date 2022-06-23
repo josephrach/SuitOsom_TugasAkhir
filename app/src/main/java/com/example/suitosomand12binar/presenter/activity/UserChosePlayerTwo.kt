@@ -13,7 +13,7 @@ class UserChosePlayerTwo : AppCompatActivity() {
 
         val tvPlayerTwo = findViewById<TextView>(R.id.tv_chose_player)
 
-        val intent = intent.getStringExtra(InputPlayer1Activity.NAME_PLAYER)
+        val intent = intent.getStringExtra(InputPlayer1Activity.PLAYER_ONE)
         val greating = "Halo Selamat Datang $intent"
 
         tvPlayerTwo.text = greating
