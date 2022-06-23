@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Suit Osom and12 Binar</string>
+    <string name="app_name">Binar-Challenge-Chp5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_board1">OnBoard1</string>
+    <string name="on_board2">OnBoard2</string>
+    <string name="on_board3">OnBoard3</string>
+    <string name="nama">Nama</string>
+    <string name="bermain_suit_melawan_sesama_pemain">Bermain suit melawan\nsesama pemain.</string>
+    <string name="bermain_suit_melawan_komputer">Bermain suit melawan\nkomputer.</string>
+    <string name="tuliskan_namamu_di_bawah">Tuliskan namamu di bawah.</string>
+    <string name="pilih_lawanmu">PILIH LAWANMU</string>
+    <string name="pemain_vs_pemain">Pemain vs Pemain</string>
+    <string name="pemain_vs_cpu">Pemain vs CPU</string>
+    <string name="kertas_gunting_batu">Kertas Gunting Batu</string>
+    <string name="btnclose">btnClose</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="pemain_1_memilih_batu">Pemain 1 Memilih Batu</string>
+    <string name="pemain_1_memilih_kertas">Pemain 1 Memilih Kertas</string>
+    <string name="pemain_1_memilih_gunting">Pemain 1 Memilih Gunting</string>
+    <string name="pemain_2">Pemain 2</string>
+    <string name="reset">Reset</string>
+    <string name="vs">VS</string>
+    <string name="hasil_permainan">Hasil Permainan</string>
+    <string name="pemain_1_menang">Pemain 1 Menang</string>
+    <string name="main_lagi">Main Lagi</string>
+    <string name="kembali_ke_menu">Kembali ke Menu</string>
+    <string name="com">COM</string>
+    <string name="batu">Batu</string>
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
 </resources>
