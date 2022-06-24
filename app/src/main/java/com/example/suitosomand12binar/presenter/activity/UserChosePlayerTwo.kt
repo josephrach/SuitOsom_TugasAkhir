@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suitosomand12binar.R
+import com.example.suitosomand12binar.activity.InputPlayer1Activity
 
 class UserChosePlayerTwo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,7 @@ class UserChosePlayerTwo : AppCompatActivity() {
 
         val tvPlayerTwo = findViewById<TextView>(R.id.tv_chose_player)
 
-        val intent = intent.getStringExtra("playertwo")
+        val intent = intent.getStringExtra(InputPlayer1Activity.PLAYER_ONE)
         val greating = "Halo Selamat Datang $intent"
 
         tvPlayerTwo.text = greating

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.suitosomand12binar.R
 import com.example.suitosomand12binar.databinding.ActivityInputp1Binding
 import com.example.suitosomand12binar.dataclass.Pemain1
-import com.example.suitosomand12binar.presenter.activity.UserChosePlayerTwo
+import com.example.suitosomand12binar.presenter.activity.GameMenuActivity
 import com.example.suitosomand12binar.sources.database.PermainanDatabase
 import com.example.suitosomand12binar.sources.interfaces.Pemain1Dao
 import kotlinx.coroutines.GlobalScope
@@ -20,11 +20,16 @@ class InputPlayer1Activity : AppCompatActivity() {
     private lateinit var binding: ActivityInputp1Binding
 
     lateinit var namaPemain: String
+
     private val permainanDatabase: PermainanDatabase? by lazy {
         PermainanDatabase.getInstance(this)
     }
     private val pemain1Dao: Pemain1Dao? by lazy {
         permainanDatabase?.pemain1Dao()
+    }
+
+    companion object {
+        const val PLAYER_ONE = "player_one"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,8 +56,8 @@ class InputPlayer1Activity : AppCompatActivity() {
             )
             saveToDatabase(pemain = newPemain1)
 
-            val intentToMenu = Intent(this, UserChosePlayerTwo::class.java)
-            intentToMenu.putExtra("playertwo", newPemain1.nama)
+            val intentToMenu = Intent(this, GameMenuActivity::class.java)
+            intentToMenu.putExtra(PLAYER_ONE, newPemain1.nama)
             Toast.makeText(this, "Halo Selamat Datang ${newPemain1.nama}", Toast.LENGTH_SHORT)
                 .show()
             startActivity(intentToMenu)
@@ -61,7 +66,6 @@ class InputPlayer1Activity : AppCompatActivity() {
         runOnUiThread() {
             etNama.setText("")
         }
-
 
     }
 

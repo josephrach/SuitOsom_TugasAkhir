@@ -24,6 +24,8 @@ class ScreenSlidePagerActivity: AppCompatActivity() {
         setContentView(R.layout.activity_screen_slide)
 
         setViewPager()
+
+        supportActionBar?.hide()
     }
 
     fun setViewPager(){
@@ -42,6 +44,8 @@ class ScreenSlidePagerActivity: AppCompatActivity() {
         )
         pageAdapter.addFragmentList(fragmentList)
         viewPager.adapter = pageAdapter
+
+        lp1Frag.activity?.actionBar?.hide()
     }
 
 

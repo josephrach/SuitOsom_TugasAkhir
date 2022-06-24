@@ -10,6 +10,7 @@ import androidx.annotation.RequiresApi
 import com.example.binar_challenge_chp5.data.Callback
 import com.example.binar_challenge_chp5.data.CallbackDialog
 import com.example.suitosomand12binar.R
+import com.example.suitosomand12binar.activity.InputPlayer1Activity
 import com.example.suitosomand12binar.databinding.ActivityVersusCpuBinding
 import com.example.suitosomand12binar.presenter.fragment.DialogHasilFragment
 import com.example.suitosomand12binar.sources.data.Controller
@@ -23,7 +24,7 @@ class VersusCPUActivity : AppCompatActivity(), Callback, CallbackDialog {
         binding = ActivityVersusCpuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val name = intent.getStringExtra("nama1")
+        val name = intent.getStringExtra(InputPlayer1Activity.PLAYER_ONE)
         binding.txtPlayer1.text = name
 
         val btnPlayer1 = arrayOf(

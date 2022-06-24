@@ -3,13 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_choose_an_opponent.xml" value="0.13677536231884058" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_inputp1.xml" value="0.13768115942028986" />
+        <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_insert_user_choose.xml" value="0.13677536231884058" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_main.xml" value="0.12" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_screen_slide.xml" value="0.11503623188405797" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_splashscreen.xml" value="0.13768115942028986" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_user_chose.xml" value="0.18" />
+        <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_versus_pemain.xml" value="0.13677536231884058" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/fragment_landingpage1.xml" value="0.11503623188405797" />
         <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/fragment_landingpage2.xml" value="0.18" />
+        <entry key="..\:/Project latihan/SuitOsom_TugasAkhir/app/src/main/res/layout/item_recycler_view_choose_opponent.xml" value="0.13677536231884058" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_game_menu.xml" value="0.1" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_inputp1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_screen_slide.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_versus_cpu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_versus_pemain.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/fragment_history.xml" value="0.1" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/fragment_leaderboard.xml" value="0.1" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/fragment_play.xml" value="0.1" />
+        <entry key="..\:/Users/LenovoPC/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/menu/nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/idn/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_game_menu.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/idn/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_inputp1.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/idn/AndroidStudioProjects/SuitOsom_TugasAkhir/app/src/main/res/layout/activity_versus_cpu.xml" value="0.16" />

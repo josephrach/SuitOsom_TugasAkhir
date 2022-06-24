@@ -19,6 +19,8 @@ class SplashscreenActivity: AppCompatActivity() {
         setContentView(R.layout.activity_splashscreen)
 
         setDelaynMove()
+
+        supportActionBar?.hide()
     }
 
     public fun setDelaynMove(){
