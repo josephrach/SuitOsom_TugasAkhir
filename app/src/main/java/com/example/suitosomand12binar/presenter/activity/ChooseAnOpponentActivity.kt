@@ -48,6 +48,7 @@ class ChooseAnOpponentActivity : AppCompatActivity() {
             val intent = Intent(this, InsertUserChooseActivity::class.java)
             intent.putExtra(InputPlayer1Activity.PLAYER_ONE, getNamePlayeOne)
             startActivity(intent)
+            finish()
         }
 
         getUserDatabase()
